@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IdleDinosaur</string>
+    <string name="login">Login\n</string>
+    <string name="credits">Credits</string>
+    <string name="appname">Idle Dinosaurs</string>
+    <string name="logo">Logo</string>
+</resources>
