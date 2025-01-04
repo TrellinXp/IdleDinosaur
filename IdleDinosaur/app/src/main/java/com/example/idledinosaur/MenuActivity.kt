@@ -13,15 +13,26 @@ import androidx.core.view.WindowInsetsCompat
 class MenuActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_menu)
+
         findViewById<Button>(R.id.back_button2).setOnClickListener {
             Log.d("Back", "Back Clicked")
             backClicked();
         }
+
+        findViewById<Button>(R.id.dinosaurs_button).setOnClickListener {
+            Log.d("Dinosaurs", "Dinosaurs Clicked")
+            dinosaursClicked();
+        }
     }
+
     private fun backClicked() {
         val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun dinosaursClicked() {
+        val intent = Intent(this, DinosaursActivity::class.java)
         startActivity(intent)
     }
 
