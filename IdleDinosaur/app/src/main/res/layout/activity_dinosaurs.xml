@@ -5,29 +5,129 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Holo.Dialog"
     tools:context=".DinosaursActivity">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="55dp"
-        android:text="Dinosaurs"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-        android:textStyle="bold"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="732dp"
+        android:layout_marginStart="1dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <GridView
-        android:id="@+id/gridView"
-        android:layout_width="343dp"
-        android:layout_height="589dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="32dp"
-        android:numColumns="3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:listitem="@android:layout/activity_list_item" />
+        <Button
+            android:id="@+id/back_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/back_to_menue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dinosaur7" />
+
+        <ImageView
+            android:id="@+id/dinosaur1"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            android:src="@drawable/amargasaurus_457031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/dinosaur9"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/tyrannosaurus_457026"
+            app:layout_constraintStart_toEndOf="@+id/dinosaur8"
+            app:layout_constraintTop_toBottomOf="@+id/dinosaur6" />
+
+        <ImageView
+            android:id="@+id/dinosaur6"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/pachycephalosaurus_457027"
+            app:layout_constraintStart_toEndOf="@+id/dinosaur5"
+            app:layout_constraintTop_toBottomOf="@+id/dinosaur3" />
+
+        <ImageView
+            android:id="@+id/dinosaur7"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/sauropelta_457023"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dinosaur4" />
+
+        <ImageView
+            android:id="@+id/dinosaur8"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/stegosaurus_457030"
+            app:layout_constraintStart_toEndOf="@+id/dinosaur7"
+            app:layout_constraintTop_toBottomOf="@+id/dinosaur5" />
+
+        <ImageView
+            android:id="@+id/dinosaur4"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/corythosaurus_457025"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dinosaur1" />
+
+        <ImageView
+            android:id="@+id/dinosaur5"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/kentrosaurus"
+            app:layout_constraintStart_toEndOf="@+id/dinosaur4"
+            app:layout_constraintTop_toBottomOf="@+id/dinosaur2" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="36dp"
+            android:text="Dinosaurs"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/dinosaur3"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/beipiaosaurus_457024"
+            app:layout_constraintStart_toEndOf="@+id/dinosaur2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/dinosaur2"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/apatosaurus_457028"
+            app:layout_constraintStart_toEndOf="@+id/dinosaur1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

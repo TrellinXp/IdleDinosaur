@@ -2,8 +2,10 @@ package com.example.idledinosaur
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.LinkMovementMethod
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +21,9 @@ class CreditsActivity : ComponentActivity() {
             Log.d("Back", "Back Clicked")
             backClicked();
         }
+
+        var t2 = findViewById<TextView>(R.id.textView7);
+        t2.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     private fun backClicked() {

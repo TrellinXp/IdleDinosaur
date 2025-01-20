@@ -5,10 +5,6 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import androidx.activity.ComponentActivity
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MenuActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +20,13 @@ class MenuActivity : ComponentActivity() {
             Log.d("Dinosaurs", "Dinosaurs Clicked")
             dinosaursClicked();
         }
+
+        findViewById<Button>(R.id.hatchdinosaurs_button).setOnClickListener {
+            Log.d("Dinosaurs", "Hatch Dinosaurs Clicked")
+            hatchDinosaursClicked();
+        }
+
+
     }
 
     private fun backClicked() {
@@ -33,6 +36,11 @@ class MenuActivity : ComponentActivity() {
 
     private fun dinosaursClicked() {
         val intent = Intent(this, DinosaursActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun hatchDinosaursClicked() {
+        val intent = Intent(this, HatchDinosaurActivity::class.java)
         startActivity(intent)
     }
 

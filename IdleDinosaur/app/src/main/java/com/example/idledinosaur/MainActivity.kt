@@ -10,19 +10,19 @@ import androidx.activity.ComponentActivity
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login)
         findViewById<Button>(R.id.google_button).setOnClickListener {
             Log.d("Login", "Login Clicked")
         }
 
         findViewById<Button>(R.id.menu_button).setOnClickListener {
             Log.d("Menu", "Menu Clicked")
-            menuClicked();
+            menuClicked()
         }
 
         findViewById<Button>(R.id.credits_button).setOnClickListener {
             Log.d("Credits", "Credits Clicked")
-            creditsClicked();
+            creditsClicked()
         }
     }
 
